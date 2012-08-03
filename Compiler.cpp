@@ -117,7 +117,7 @@ void Compiler::createPreprocessor() {
 						    mTarget.get());
 
   llvm::OwningPtr<clang::CompilerInstance> Clang(new clang::CompilerInstance());
-   
+
   mPP.reset(new clang::Preprocessor(*mDiagnostics,
                                     mLangOpts,
                                     mTarget.get(),
@@ -185,7 +185,6 @@ void Compiler::injectPreDefined() {
 void Compiler::init(const std::string &Triple, const std::string &CPU,
                     const std::vector<std::string> &Features, bool isCXX) {
   mLangOpts.RTTI = 0;  // Turn off the RTTI information support
-  mLangOpts.NeXTRuntime = 0;   // Turn off the NeXT runtime uses
   mLangOpts.C99 = 1;
   if (isCXX) {
     mLangOpts.CPlusPlus = 1;

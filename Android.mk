@@ -59,6 +59,7 @@ endif
 TBLGEN_TABLES :=    \
 	AttrList.inc	\
 	Attrs.inc	\
+	CommentNodes.inc \
 	DeclNodes.inc	\
 	DiagnosticCommonKinds.inc	\
 	DiagnosticFrontendKinds.inc	\
@@ -96,6 +97,7 @@ endif
 TBLGEN_TABLES :=    \
 	AttrList.inc    \
 	Attrs.inc    \
+	CommentNodes.inc \
 	DeclNodes.inc    \
 	DiagnosticCommonKinds.inc   \
 	DiagnosticDriverKinds.inc \
