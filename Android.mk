@@ -2,41 +2,52 @@ LOCAL_PATH := $(call my-dir)
 LLVM_ROOT_PATH := external/llvm
 CLANG_ROOT_PATH := external/clang
 llvm_static_libs_needed := \
+	libclangFrontend	\
+        libclangDriver \
+	libclangSerialization	\
+	libclangParse	\
+	libclangSema	\
+	libclangAnalysis	\
+	libclangCodeGen	\
+	libclangAST	\
+	libclangLex	\
+	libclangEdit	\
+	libclangBasic	\
 	libLLVMLinker   \
 	libLLVMipo	\
 	libLLVMBitWriter	\
 	libLLVMBitReader	\
 	libLLVMARMCodeGen	\
-	libLLVMARMAsmPrinter	\
 	libLLVMARMInfo	\
+	libLLVMARMAsmParser \
+	libLLVMARMDesc \
+	libLLVMARMAsmPrinter	\
 	libLLVMX86CodeGen	\
-	libLLVMX86AsmPrinter	\
 	libLLVMX86Info	\
+	libLLVMX86Desc \
+	libLLVMX86AsmParser \
+	libLLVMX86AsmPrinter	\
 	libLLVMX86Utils	\
+	libLLVMMipsCodeGen \
+	libLLVMMipsInfo \
+	libLLVMMipsDesc \
+	libLLVMMipsAsmParser \
+	libLLVMMipsAsmPrinter \
 	libLLVMAsmPrinter	\
 	libLLVMSelectionDAG	\
 	libLLVMCodeGen	\
 	libLLVMScalarOpts	\
 	libLLVMInstCombine	\
-	libLLVMTransformUtils	\
 	libLLVMInstrumentation	\
+	libLLVMTransformUtils	\
 	libLLVMipa	\
 	libLLVMAnalysis	\
 	libLLVMTarget	\
 	libLLVMMC	\
 	libLLVMMCParser	\
 	libLLVMCore	\
-	libclangFrontend	\
-        libclangDriver \
-	libclangSerialization	\
-	libclangCodeGen	\
-	libclangParse	\
-	libclangSema	\
-	libclangAnalysis	\
-	libclangEdit	\
-	libclangAST	\
-	libclangLex	\
-	libclangBasic	\
+	libLLVMArchive \
+	libLLVMAsmParser \
 	libLLVMSupport  \
         libLLVMVectorize
 
