@@ -62,7 +62,7 @@ include $(CLANG_ROOT_PATH)/clang.mk
 LOCAL_MODULE := libndkpc
 LOCAL_MODULE_TAGS := optional
 
-LOCAL_CFLAGS += -Wno-sign-promo
+LOCAL_CFLAGS += -Wno-sign-promo -fno-strict-aliasing
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 LOCAL_CFLAGS += -D__DISABLE_ASSERTS
 endif
@@ -100,7 +100,7 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_MODULE_CLASS := EXECUTABLES
 
-LOCAL_CFLAGS += -Wno-sign-promo
+LOCAL_CFLAGS += -Wno-sign-promo -fno-strict-aliasing
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 LOCAL_CFLAGS += -D__DISABLE_ASSERTS
 endif
